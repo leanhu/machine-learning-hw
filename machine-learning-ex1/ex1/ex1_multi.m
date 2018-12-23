@@ -92,6 +92,8 @@ theta = zeros(3, 1);
 % Plot the convergence graph
 figure;
 plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
+
+
 xlabel('Number of iterations');
 ylabel('Cost J');
 
