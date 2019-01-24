@@ -1,0 +1,10 @@
+for i = 1:size(X,1)
+  tmp = Inf;
+  for k = 1:K
+    distance = (X(i, 1) - centroids(k,1)) ^ 2 + (X(i, 2) - centroids(k,2)) ^ 2;
+    if tmp > distance
+      idx(i) = k;
+      tmp = distance;
+    endif
+  endfor
+endfor
